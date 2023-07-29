@@ -1,0 +1,122 @@
+/* -------------- Reset CSS ----------------- */
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html,
+body {
+  min-height: 100vh;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+span {
+  display: inline;
+}
+div {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+}
+
+/* -------------- Reset CSS ----------------- */
+
+.body {
+  background: linear-gradient(to bottom right, #8400ff, #f5ff66);
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+}
+.article {
+  width: 300px;
+  height: auto;
+  background: rgba(59, 68, 68, 0.3);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.article .article__title {
+  font-size: 1.5rem;
+  color: #eaebe3;
+  text-align: center;
+  /* font-weight: bolder; */
+  margin-bottom: 0.5rem;
+}
+.article .article__description {
+  color: #eaebe3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.article__description .description-icon {
+  font-size: 1.5rem;
+}
+.article__description .description-text {
+  font-size: 1rem;
+}
+
+.article__btns {
+  display: flex;
+  justify-content: space-evenly;
+}
+.btn {
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  background-color: #eaebe3;
+}
+.btn-project {
+  font-size: 1.4rem;
+}
+.btn:hover {
+  background-color: #333;
+  color: #fff;
+  transition: all 0.1s ease-in-out;
+}
