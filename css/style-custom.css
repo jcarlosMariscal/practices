@@ -224,7 +224,8 @@ body {
 
 /* ---------------------------- 2. Calculator ------------------------ */
 .container {
-  width: 30vw;
+  min-width: 33vw;
+  max-width: 95vw;
 }
 .container > p {
   text-align: center;
@@ -251,6 +252,7 @@ body {
   justify-content: space-between;
   padding: 0.5rem 0.8rem;
   border-bottom: 1px solid var(--btn-light);
+  position: relative;
 }
 .calculator__options button {
   font-size: 1em;
@@ -269,6 +271,26 @@ body {
 .option-two button:hover {
   transition: all 0.3s ease;
   color: var(--color-dark);
+}
+.history {
+  width: 70%;
+  height: 380px;
+  background-color: var(--color-white);
+  color: var(--color-dark);
+  opacity: 0.9;
+  padding: 1rem;
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  transform: translateX(-100%);
+  transition: all 0.3s ease-in-out;
+  overflow-x: auto;
+}
+.history.show {
+  transition: all 0.3s ease-in-out;
+  transform: translateX(0%);
 }
 .calculator__keys {
   display: grid;
@@ -303,14 +325,30 @@ body {
 .key--equal {
   background: var(--color-green) !important;
   color: var(--color-white) !important;
+  grid-row: 5;
+  grid-column: 3 / span 2;
 }
 .key--equal:hover {
   background: var(--color-green-hover) !important;
   color: var(--color-white) !important;
 }
 .key--clear {
-  color: red;
+  color: red !important;
 }
 .key--clear:hover {
   color: rgb(235, 2, 2) !important;
+}
+.text-right {
+  text-align: right;
+  padding: 0.2rem 0.5rem;
+  color: var(--color-dark);
+  font-size: 1rem;
+  font-weight: 500;
+}
+#reset-history {
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  padding: 0.5rem;
 }
