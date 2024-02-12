@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,12 +22,19 @@
         gap: 1rem;
       }
       .container {
-        width: 80vw;
-        margin: 2rem 0;
+        width: 90vw;
+        margin: 1rem 0;
       }
       .welcome {
         color: rgb(4, 17, 105);
         text-align: center;
+        margin: 1rem 0;
+      }
+      .welcome h1{
+        margin: .5rem 0;
+      }
+      .welcome p{
+        font-size: 1.2rem;
       }
       .cards {
         width: 100%;
@@ -41,7 +48,9 @@
       }
       .card {
         width: 15rem;
-        height: 8rem;
+        height: 6rem;
+        padding: 0 .5rem;
+        text-align: center;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -53,22 +62,20 @@
         transition: all 0.5s ease-in;
       }
       .card .card__title .card__title-a{
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: rgb(4, 17, 105);
         text-decoration: none;
         transition: all 0.5s ease-in;
       }
       .card:hover{
-        background-color: rgba(0, 0, 0, 0.005);
         transition: all 0.5s ease-in;
-        transform: scale(1.02) !important;
       }
       .card:hover .card__title .card__title-a{
-        color: #2b8af0;
+        /* color: #2b8af0; */
       }
       .card .card__title .card__title-a:hover{
-        transition: all 0.5s ease-in;
-        color: rgb(4, 17, 105) !important;
+        transition: all 0.1s ease-in;
+        color: rgb(51, 4, 105) !important;
       }
     </style>
   </head>
